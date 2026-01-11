@@ -80,16 +80,28 @@ public class Main {
             return;
         }
 
-        //Encontrando item
-        Item itemEncontrado = gerador.gerarItemAleatorio();
-        System.out.println("\nVocê escontrou: " + itemEncontrado.getNome());
-        System.out.println("Descrição: " + itemEncontrado.getDescricao());
+        //Sorteia quantos itens será encontrado
+        int quantidade = new java.util.Random().nextInt(3) + 1;
 
-        String resposta = menu.lerTexto("\nDeseja pegar? (s/n): ");
-        if(resposta.equalsIgnoreCase("s")){
-            jogadorAtual.pegarItem(itemEncontrado);
+        System.out.println(">> Você escontrou " + quantidade + " item(ns) no chão!");
+
+        // Gera a lista temporária de loot
+        List<Item> lootEncontrado = new ArrayList<>();
+        for (int i = 0; i < quantidade; i++) {
+            Item item = gerador.gerarItemAleatorio();
+            lootEncontrado.add(item);
+            System.out.println("   * " + item.getNome() + " (" + item.getDescricao() + ")");
+        }
+
+        String resposta = menu.lerTexto("\nDeseja pegar tudo? (s/n): ");
+
+        if (resposta.equalsIgnoreCase("s")) {
+            for (Item item : lootEncontrado) {
+                jogadorAtual.pegarItem(item);
+            }
+            System.out.println("\nItens guardados na mochila!");
         } else {
-            System.out.println("\nVocê deixou o item no chão");
+            System.out.println("\nVocê ignorou os itens e seguiu caminho.");
         }
     }
 

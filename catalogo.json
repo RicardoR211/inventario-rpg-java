@@ -1,0 +1,91 @@
+[
+  {
+    "codigo": "CAP-COURO",
+    "nome": "Capuz de Aprendiz",
+    "descricao": "Protege do sol, mas não de espadas.",
+    "durabilidade": 20,
+    "nivelDefesa": 2,
+    "slot": "CABECA",
+    "preco": 10.0
+  },
+  {
+    "codigo": "CAP-ELITE",
+    "nome": "Elmo do Comandante",
+    "descricao": "Feito de aço reforçado. Pesado e seguro.",
+    "durabilidade": 150,
+    "nivelDefesa": 15,
+    "slot": "CABECA",
+    "preco": 200.0
+  },
+  {
+    "codigo": "PEIT-TRAPO",
+    "nome": "Camisa de Linho",
+    "descricao": "Melhor que andar pelado, mas só um pouco.",
+    "durabilidade": 10,
+    "nivelDefesa": 1,
+    "slot": "PEITORAL",
+    "preco": 5.0
+  },
+  {
+    "codigo": "PEIT-ACO",
+    "nome": "Peitoral de Cavaleiro",
+    "descricao": "Brilha sob a luz do sol. Impenetrável.",
+    "durabilidade": 200,
+    "nivelDefesa": 20,
+    "slot": "PEITORAL",
+    "preco": 350.0
+  },
+  {
+    "codigo": "CALC-SIMPLES",
+    "nome": "Calças de Pano",
+    "descricao": "Confortáveis para dormir.",
+    "durabilidade": 15,
+    "nivelDefesa": 1,
+    "slot": "CALCAS",
+    "preco": 8.0
+  },
+  {
+    "codigo": "CALC-MALHA",
+    "nome": "Grevas de Malha",
+    "descricao": "Argolas de metal entrelaçadas.",
+    "durabilidade": 80,
+    "nivelDefesa": 10,
+    "slot": "CALCAS",
+    "preco": 120.0
+  },
+  {
+    "codigo": "BOTA-VELHA",
+    "nome": "Botas Furadas",
+    "descricao": "Entra água quando chove.",
+    "durabilidade": 10,
+    "nivelDefesa": 0,
+    "slot": "BOTAS",
+    "preco": 2.0
+  },
+  {
+    "codigo": "BOTA-GUERRA",
+    "nome": "Botas de Batalha",
+    "descricao": "Com biqueira de ferro para chutar portas.",
+    "durabilidade": 100,
+    "nivelDefesa": 5,
+    "slot": "BOTAS",
+    "preco": 90.0
+  },
+  {
+    "codigo": "ESP-MADEIRA",
+    "nome": "Espada de Treino",
+    "descricao": "Feita de carvalho sólido.",
+    "durabilidade": 20,
+    "poderDeAtaque": 3,
+    "preco": 10.0
+  },
+  {
+    "codigo": "POC-VIDA",
+    "nome": "Poção de Cura",
+    "descricao": "Cura ferimentos leves.",
+    "usosRestantes": 1,
+    "efeito": "CURA",
+    "intensidade": 20,
+    "preco": 25
+  }
+]

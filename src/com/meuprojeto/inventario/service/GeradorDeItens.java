@@ -7,6 +7,8 @@ import com.google.gson.JsonObject;
 import com.meuprojeto.inventario.model.item.Arma;
 import com.meuprojeto.inventario.model.item.Item;
 import com.meuprojeto.inventario.model.item.Pocao;
+import com.meuprojeto.inventario.model.item.armadura.Bota;
+import com.meuprojeto.inventario.model.item.armadura.Calca;
 import com.meuprojeto.inventario.model.item.armadura.Capacete;
 import com.meuprojeto.inventario.model.item.armadura.Peitoral;
 
@@ -50,7 +52,8 @@ public class GeradorDeItens {
                     String slot = obj.get("slot").getAsString();
                     if (slot.equals("CABECA")) itemCriado = gson.fromJson(obj, Capacete.class);
                     else if (slot.equals("PEITORAL")) itemCriado = gson.fromJson(obj, Peitoral.class);
-                    // ... outros slots ...
+                    else if (slot.equals("CALCAS")) itemCriado = gson.fromJson(obj, Calca.class);
+                    else if (slot.equals("BOTAS")) itemCriado = gson.fromJson(obj, Bota.class);
                 }
 
                 /* Por fim, criando o item*/
